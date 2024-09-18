@@ -1,0 +1,156 @@
+$bg_color: #FBF6F6;
+$font_color: #504949;
+$bcg_color: #B59797;
+$footer_color: #3C2A2A;
+
+@font-face {
+    font-family: Cormorant;
+    src: url('//assets/fonts/Cormorant-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Cormorant;
+    src: url('//assets/fonts/Cormorant-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Cormorant;
+    src: url('//assets/fonts/Cormorant-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Cormorant;
+    src: url('//assets/fonts/Cormorant-SemiBold.ttf');
+    font-weight: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cormorant;
+    color: $font_color;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.cnt {
+    max-width: 1162px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hdr {
+    padding: 20px 0;
+    margin-bottom: 146px;
+    padding-top: 97px;
+
+    &__menu {
+        display: flex;
+        gap: 40px;
+        justify-content: flex-end;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__link {
+        font-weight: 400;
+        color: $font_color;
+
+        &:hover {
+            font-weight: 600;
+        }
+    }
+}
+
+.main {
+    background-color: $bg_color;
+
+    &__txt-top {
+        margin-left: 107px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__title {
+        font-size: 80px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    &__txt {
+        font-weight: 400;
+        font-size: 18px;
+        max-width: 553px;
+    }
+
+    &__txt-prog {
+        margin-bottom: 20px;
+    }
+
+    &__dig {
+        font-size: 50px;
+    }
+
+    &__box {
+        display: flex;
+        gap: 79px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 38px;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 18px;
+        width: 434px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__left {
+        margin-right: 80px;
+    }
+
+    &__subtitle {
+        font-size: 40px;
+        font-weight: 700;
+        min-width: 517px;
+    }
+
+    &__item {
+        max-width: 419px;
+        margin-bottom: 10px;
+
+        @media (max-width: 376px) {
+            min-width: 249px;
+        }
+
+        &_one {
+            display: flex;
+            gap: 23px;}
+    }
+}
